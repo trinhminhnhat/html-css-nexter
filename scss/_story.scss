@@ -1,0 +1,9 @@
+.story {
+    &__picture {
+        background-color: bisque;
+    }
+
+    &__content {
+        background-color: $color-grey-light-1;
+    }
+}
