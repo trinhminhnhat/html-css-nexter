@@ -25,6 +25,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1.1; }
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -75,11 +80,57 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.hamburger {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1.5rem;
+  cursor: pointer; }
+  .hamburger__btn {
+    border: none;
+    border-radius: 0;
+    width: 4.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .hamburger__btn:before {
+      transform: translateY(-1.5rem); }
+    .hamburger__btn:after {
+      transform: translateY(1.3rem); }
+    .hamburger__btn:before, .hamburger__btn:after {
+      content: '';
+      display: block;
+      width: 4.5rem;
+      height: 2px;
+      background-color: #fff; }
 
 .header {
-  background-color: skyblue;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  justify-content: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 4rem 8rem 8rem 8rem; }
+  .header__logo {
+    height: 3rem;
+    justify-self: center; }
+  .header__btn {
+    align-self: start;
+    justify-self: start; }
+  .header__seenon-logos img {
+    height: 2.5rem; }
 
 .realtors {
   background-color: #101d2c;
