@@ -129,8 +129,25 @@ body {
   .header__btn {
     align-self: start;
     justify-self: start; }
-  .header__seenon-logos img {
-    height: 2.5rem; }
+  .header__seenon-text {
+    display: grid;
+    font-size: 1.6rem;
+    color: #aaa;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: currentColor; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; }
+    .header__seenon-logos img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .realtors {
   background-color: #101d2c;
