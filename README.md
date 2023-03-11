@@ -2,6 +2,10 @@
 
 A responsive web design using grid layout.
 
+![Web's preview](./img/banner.png)
+
+Live: [**https://trinhminhnhat.github.io/html-css-nexter**](https://trinhminhnhat.github.io/html-css-nexter)
+
 ## ⚓ Environment
 
 - Node 19.3.0
